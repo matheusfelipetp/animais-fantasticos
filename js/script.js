@@ -1,4 +1,4 @@
-import initScrollSmooth from './modules/scroll-suave.js';
+import ScrollSmooth from './modules/scroll-suave.js';
 import initAnimateScroll from './modules/scroll-animacao.js';
 import initAccordion from './modules/accordion.js';
 import initTabNav from './modules/tabNav.js';
@@ -10,7 +10,9 @@ import initOperation from './modules/funcionamento.js';
 import initFetchAnimais from './modules/fetch-animais.js';
 import initFetchBitcoin from './modules/fetch-bitcoin.js';
 
-initScrollSmooth();
+const scrollSmooth = new ScrollSmooth('[data-menu="smooth"] a[href^="#"]');
+scrollSmooth.init();
+
 initAnimateScroll();
 initAccordion();
 initTabNav();

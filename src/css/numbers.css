@@ -1,0 +1,25 @@
+.numbers-grid {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.numbers-grid h3 {
+  font: 700 2rem "Playfair Display SC", serif;
+  margin-bottom: 0.5rem;
+}
+
+.numbers-grid span {
+  font: 700 1.5rem "IBM Plex Mono", monospace;
+  color: #e54;
+}
+
+@media (max-width: 700px) {
+  .numbers-grid {
+    grid-column: 1;
+  }
+  .numbers-grid h3 {
+    font-size: 1.5rem;
+  }
+}

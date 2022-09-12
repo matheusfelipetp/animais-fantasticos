@@ -6,7 +6,7 @@ import Modal from './modules/modal.js';
 import ToolTip from './modules/tooltip.js';
 import DropDownMenu from './modules/dropdown-menu.js';
 import MenuMobile from './modules/menu-mobile.js';
-import initOperation from './modules/funcionamento.js';
+import Operation from './modules/operation.js';
 import initFetchAnimais from './modules/fetch-animais.js';
 import initFetchBitcoin from './modules/fetch-bitcoin.js';
 
@@ -41,7 +41,8 @@ dropdownMenu.init();
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
-initOperation();
+const operation = new Operation('[data-week]', 'open');
+operation.init();
 
 initFetchBitcoin('https://blockchain.info/ticker', '.btc-price');
 initFetchAnimais('../../animaisapi.json', '.numbers-grid');

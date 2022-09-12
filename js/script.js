@@ -36,5 +36,5 @@ initAnimateScroll();
 initDropDownMenu();
 initMenuMobile();
 initOperation();
-initFetchAnimais();
 initFetchBitcoin();
+initFetchAnimais('../../animaisapi.json', '.numbers-grid');

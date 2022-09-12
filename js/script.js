@@ -1,5 +1,5 @@
 import ScrollSmooth from './modules/scroll-suave.js';
-import initAnimateScroll from './modules/scroll-animacao.js';
+import AnimateScroll from './modules/scroll-animate.js';
 import Accordion from './modules/accordion.js';
 import TabNav from './modules/tabNav.js';
 import Modal from './modules/modal.js';
@@ -32,9 +32,12 @@ modal.init();
 const tooltip = new ToolTip('[data-tooltip]');
 tooltip.init();
 
-initAnimateScroll();
+const animateScroll = new AnimateScroll("[data-anime='scroll']");
+animateScroll.init();
+
 initDropDownMenu();
 initMenuMobile();
 initOperation();
+
 initFetchBitcoin('https://blockchain.info/ticker', '.btc-price');
 initFetchAnimais('../../animaisapi.json', '.numbers-grid');

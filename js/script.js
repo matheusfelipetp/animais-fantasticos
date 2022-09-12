@@ -45,4 +45,4 @@ const operation = new Operation('[data-week]', 'open');
 operation.init();
 
 initFetchBitcoin('https://blockchain.info/ticker', '.btc-price');
-initFetchAnimais('../../animaisapi.json', '.numbers-grid');
+initFetchAnimais('./animaisapi.json', '.numbers-grid');

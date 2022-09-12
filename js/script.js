@@ -36,5 +36,5 @@ initAnimateScroll();
 initDropDownMenu();
 initMenuMobile();
 initOperation();
-initFetchBitcoin();
+initFetchBitcoin('https://blockchain.info/ticker', '.btc-price');
 initFetchAnimais('../../animaisapi.json', '.numbers-grid');

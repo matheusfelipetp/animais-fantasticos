@@ -2,7 +2,7 @@ import ScrollSmooth from './modules/scroll-suave.js';
 import initAnimateScroll from './modules/scroll-animacao.js';
 import Accordion from './modules/accordion.js';
 import TabNav from './modules/tabNav.js';
-import initModal from './modules/modal.js';
+import Modal from './modules/modal.js';
 import initToolTip from './modules/tooltip.js';
 import initDropDownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
@@ -22,8 +22,14 @@ const tavNab = new TabNav(
 );
 tavNab.init();
 
+const modal = new Modal(
+  "[data-modal='open'",
+  "[data-modal='close'",
+  "[data-modal='container'",
+);
+modal.init();
+
 initAnimateScroll();
-initModal();
 initToolTip();
 initDropDownMenu();
 initMenuMobile();
